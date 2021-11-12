@@ -1,0 +1,83 @@
+body {
+    background-color: #5a5851;
+    margin: 0px;
+}
+
+li.navbutton {
+    font-family: 'Dosis', sans-serif;
+}
+
+li.home {
+    margin: 0;
+    padding: 0;
+}
+
+.logo1 {
+    text-align: center;
+    text-shadow: #111;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #5e5044;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+li a:hover {
+    background-color: #272523;
+    color: white;
+}
+
+li a:active {
+    color: #33302a;
+    border-color: #b17d55;
+    cursor: pointer;
+}
+
+button.connect:hover { 
+    background-color: #9c683f;
+}
+
+button.connect:active {
+    color: #33302a;
+    cursor: pointer;
+    box-shadow: none;
+    margin-top: 10px;
+}
+
+button.connect {
+    float: right;
+    border: none;
+    text-align: right;
+    color: rgb(240, 232, 221);
+    background-color: #b17d55;
+    box-shadow: 0 3px 0 #744f32;
+    height: 30px;
+    line-height: 20px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-right: 5px;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
