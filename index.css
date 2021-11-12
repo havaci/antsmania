@@ -3,26 +3,34 @@ body {
     margin: 0px;
 }
 
+.navbar {
+    background-color: #111;
+    width: 100%;
+}
+
 li.navbutton {
     font-family: 'Dosis', sans-serif;
 }
 
 li.home {
-    margin: 0;
-    padding: 0;
+    margin: none;
+    padding: none;
+
 }
 
-.logo1 {
-    text-align: center;
-    text-shadow: #111;
+.background1 {
+    background: url(images/background1.png) no-repeat center;
+    background-size: cover;
+    image-rendering: pixelated;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     overflow: hidden;
     background-color: #111;
+    max-width: 1280px;
 }
 
 li {
@@ -31,14 +39,14 @@ li {
 
 li a {
     display: block;
-    color: #5e5044;
+    color: #ffc400;
     text-align: center;
-    padding: 15px 20px;
+    padding: 15px 25px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 li a:hover {
@@ -47,19 +55,20 @@ li a:hover {
 }
 
 li a:active {
-    color: #33302a;
+    color: #574200;
     border-color: #b17d55;
     cursor: pointer;
 }
 
 button.connect:hover { 
-    background-color: #9c683f;
+    background-color: #a56d43;
 }
 
 button.connect:active {
     color: #33302a;
     cursor: pointer;
     box-shadow: none;
+    background-color: #7e5433;
     margin-top: 10px;
 }
 
@@ -70,7 +79,7 @@ button.connect {
     color: rgb(240, 232, 221);
     background-color: #b17d55;
     box-shadow: 0 3px 0 #744f32;
-    height: 30px;
+    height: 35px;
     line-height: 20px;
     padding: 0 20px;
     text-transform: uppercase;
