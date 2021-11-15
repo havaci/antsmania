@@ -19,7 +19,9 @@ li.home {
 }
 
 .background1 {
-    background: url(images/background1.png) no-repeat center ;
+    background: url(images/background1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     image-rendering: pixelated;
     font-family: 'Dosis', sans-serif;
