@@ -110,21 +110,18 @@ ul.h2-1 {
     font-weight: 600;
 }
 
-ul.text1 { 
+div.text1 { 
     background: none;
-    padding: 4vh 0 0 33%;
     margin: 0; 
     text-align: center;
     width: 100%;
     list-style: none;
 }
 
-li.text1 {
-    margin: 0;
-    padding: 0; 
+h2.text1 {
     text-align: center;
     word-spacing: 4vh;
-    font-size: 4vh;
+    font-size: 5vh;
     text-shadow: 2px 2px 2px #111, 3px 3px 5px #111, 2px 2px 7px #111, 2px 2px 7px #111, 2px 2px 10px #111
 }
 
