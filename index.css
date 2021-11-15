@@ -21,15 +21,14 @@ li.home {
 .background1 {
     background: url(images/background1.png);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-size: 100% 100%;
     image-rendering: pixelated;
     font-family: 'Dosis', sans-serif;
     color: white;
     background-color: none;
     text-align: center;
     height: 100vh;
-    width: 215,5vh;
+    width: 100%; 
 }
 
 ul {
@@ -111,24 +110,27 @@ ul.h2-1 {
     font-weight: 600;
 }
 
+ul.text1 { 
+    background: none;
+    padding: 4vh 0 0 33%;
+    margin: 0; 
+    text-align: center;
+    width: 100%;
+    list-style: none;
+}
+
+li.text1 {
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    word-spacing: 4vh;
+    font-size: 4vh;
+    text-shadow: 2px 2px 2px #111, 3px 3px 5px #111, 2px 2px 7px #111, 2px 2px 7px #111, 2px 2px 10px #111
+}
+
 .topic1 {
     color: #fff;
     padding: 8rem 0;
     font-size: 30px;
     font-family: 'Dosis', 'sans-serif';
-}
-
-ul.text1 {
-    background: none;
-    padding-left: 280px;
-    text-align: center;
-    width: 100%;
-}
-
-li.text1 {
-    text-align: center;
-    word-spacing: 30px;
-    padding-left: 100px;
-    font-size: 40px;
-    text-shadow: 2px 2px 2px #111, 3px 3px 5px #111, 2px 2px 7px #111, 2px 2px 7px #111, 2px 2px 10px #111
 }
