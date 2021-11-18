@@ -15,7 +15,6 @@ li.navbutton {
 li.home {
     margin: none;
     padding: none;
-
 }
 
 .background1 {
@@ -46,7 +45,7 @@ li {
 
 li a {
     display: block;
-    color: #ffc400;
+    color: #b17d55;
     text-align: center;
     padding: 15px 25px;
     text-decoration: none;
@@ -63,7 +62,6 @@ li a:hover {
 
 li a:active {
     color: #574200;
-    border-color: #b17d55;
     cursor: pointer;
 }
 
@@ -83,7 +81,7 @@ button.whitepaper {
     float: right;
     border: none;
     text-align: right;
-    color: rgb(240, 232, 221);
+    color: #f0e8dd;
     font-size: 1rem;
     font-family: 'Dosis', 'sans-serif';
     background-color: #b17d55;
