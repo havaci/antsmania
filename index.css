@@ -51,17 +51,18 @@ li a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    transition: all 0.3s;
+    transition: all 0.2s;
     border-radius: 6px;
 }
 
 li a:hover {
     background-color: #272523;
     color: white;
+    text-shadow: 1px 1px 1px #111, 2px 2px 2px #111;
 }
 
 li a:active {
-    color: #574200;
+    color: #33302a;
     cursor: pointer;
 }
 
@@ -97,18 +98,7 @@ button.whitepaper {
     transition: all 0.2s;
 }
 
-ul.h2-1 {
-    margin-left: 4rem;
-    text-align: center;
-    display: block;
-    color: #fff;
-    padding: 0px 25px 0;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-div.text1 { 
+div.subtitle { 
     background: none;
     margin: 0; 
     text-align: center;
@@ -116,16 +106,30 @@ div.text1 {
     list-style: none;
 }
 
-h2.text1 {
+h2.subtitle {
     text-align: center;
     word-spacing: 4vh;
     font-size: 5vh;
-    text-shadow: 2px 2px 2px #111, 3px 3px 5px #111, 2px 2px 7px #111, 2px 2px 7px #111, 2px 2px 10px #111
+    text-shadow: 1px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000, 4px 4px 4px #000, 5px 5px 5px #000;
 }
 
-.topic1 {
-    color: #fff;
-    padding: 8rem 0;
-    font-size: 30px;
+div.background2 {
+    margin: 0;
+    padding: 0;
+}
+
+p.topic1 {
+    color: #ecdac9;
+    font-size: 2rem;
+    font-family: 'Slackey', 'cursive';
+    text-shadow: 1px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000, 4px 4px 4px #000;
+    padding: 1rem;
+    margin: 0;
+}
+
+p.text {
+    color: #ecdac9;
+    font-size: 1rem;
     font-family: 'Dosis', 'sans-serif';
+    text-shadow: 1px 1px 1px #000;
 }
