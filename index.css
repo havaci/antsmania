@@ -131,20 +131,21 @@ h2.subtitle {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 1rem;
-    border-radius: 40px;
+    border-radius: 50px;
 }
 
 p.topic1 {
-    color: #ecdac9;
+    text-align: center;
+    color: #e9dbce;
     font-size: 2.5rem;
     font-family: 'Slackey', 'cursive';
     text-shadow: 1px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000, 4px 4px 4px #000;
-    padding: 1rem;
+    padding-top: 1rem;
     margin: 0;
 }
 
 p.text {
-    color: #ecdac9;
+    color: #e9dbce;
     font-size: 2rem;
     font-family: 'Dosis', 'sans-serif';
     text-shadow: 1px 1px 1px #000;
