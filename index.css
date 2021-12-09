@@ -29,9 +29,10 @@ html{
     width: 100%;
     position: fixed;
     z-index: 9999;
+    box-shadow: 0 0 1em black, 0 0 2em black, 0 0 1.5em black;
 } 
 
-li.navbutton {
+.navbutton {
     font-family: 'Dosis', sans-serif;
 }
 
@@ -46,6 +47,7 @@ li.navbutton {
     text-align: center;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .home {
@@ -131,10 +133,12 @@ div.subtitle {
     list-style: none;
 }
 
-h2.subtitle {
+.subtitle {
     text-align: center;
     word-spacing: 4vh;
     font-size: 5vh;
+    z-index: 100;
+    position: relative;
     text-shadow: 1px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000, 4px 4px 4px #000, 5px 5px 5px #000;
 }
 
@@ -146,16 +150,15 @@ h2.subtitle {
     background-color: none;
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 .box1 {
     background-color:#312720;
-    opacity: 0.9;
+    opacity: 0.92;
     margin-left: 3rem;
     margin-right: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
+    padding: 2rem 2rem 1rem 2rem;
     border-radius: 50px;
     height: 95%;
     box-shadow: 6px 6px 2px #1f1915;
@@ -166,18 +169,50 @@ h2.subtitle {
     src: url(antilles.ttf);
   }
 
-p.topic1 {
+#homelogo {
+    position: absolute;
+    top: -60px;
+}
+#game {
+    position: absolute;
+    top: -60px;
+}
+#marketplace {
+    position: absolute;
+    top: -60px;
+}
+#roadmap {
+    position: absolute;
+    top: -60px;
+}
+#tokenomics {
+    position: absolute;
+    top: -60px;
+}
+#team {
+    position: absolute;
+    top: -60px;
+}
+#partners {
+    position: absolute;
+    top: -60px;
+}
+
+.topic1 {
+    background-color: #312720;
     text-align: center;
     color: #e9dbce;
     font-size: 6rem;
     font-family: Antilles, 'cursive';
     text-shadow: 1px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000, 4px 4px 4px #000;
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 2rem 1rem 0;
     letter-spacing: 3px;
-    margin: 0;
+    margin: 0 0 2rem 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px #0a0a0a, inset 0 0.6em 0  #3b3027, 0 0 0.6em black;
 }
 
-p.text {
+.text {
     color: #e9dbce;
     font-size: 2rem;
     padding-bottom: 2rem;
@@ -198,18 +233,18 @@ p.text {
   }
   
 .column {
-    background-color: #000;
+    background-color: #1d1a16;
     float: left;
     width: 28%;
     margin: 60px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #5f5045;
+    border-radius: 20px;
+    box-shadow: 0 0 1em #141413, inset 0 0 1em #744f32, 5px 5px 5px #a56d43;
     position: relative;
     text-align: center;
     color: #e9dbce;
     font-size: 4rem;
     text-shadow: 3px 3px 3px #352b24;
-  }
+}
   
 .row::after {
     content: "";
@@ -219,13 +254,122 @@ p.text {
 
 .centered {
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Antilles, 'cursive';
-    background-color: rgb(68, 62, 57);
+    background-color: #312720;
+    text-shadow: 6px 6px 1px #0a0a0a;
+    box-shadow: 5px 5px 2px #0a0a0a, inset 0 0.5em 0  #3b3027;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 10px;
     opacity: 0.8;
+}
+
+.imglogo {
+    z-index: 100;
+    position: relative;
+}
+
+canvas {
+    filter: blur(1px);
+    width: 100%;
+    height: 80%;
+    padding-top: 3rem;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+
+  /* TEAM */
+
+.boxTeam {
+    background-color:#312720;
+    opacity: 0.92;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 50px;
+    height: 95%;
+    box-shadow: 6px 6px 2px #1f1915;
+}
+
+.limitCardTeam {
+    max-width: 1280px;
+    max-height: 920px;
+    margin: auto;
+}
+
+.card {
+    box-shadow: 6px 6px 10px 0 black;
+    transition: 0.5s;
+    width: 20%;
+    border-radius: 10px;
+    border: solid 5px #3b3027;
+    margin: auto;
+    float: left;
+    background-color: #5a483a;
+}
+
+.card:hover {
+    box-shadow: 12px 12px 20px 0 black;
+    transform: scale(1.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+.hrTeam {
+    height: 2px; 
+    color: black;
+    background-color: black; 
+    padding: 0;
+    border: none;
+    margin: 0rem 0 0.3rem 0;
+}
+
+.teamImg {
+    opacity: 1;
+}
+.nameTeam {
+    font-family: Antilles, 'cursive';
+    background-color: #312720;
+    color: #e9dbce;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 1rem;
+    box-shadow: 2px 2px 2px black;
+}
+
+.occupation {
+    font-family: Antilles, 'cursive';
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2px 5rem 0.5rem 5rem;
+    background-color: #c9966f;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.experienceTeam {
+    font-family: 'Dosis', 'sans-serif';
+    color: #e9dbce;
+    margin: 2px;
+    padding-bottom: 0.3rem;
+    text-align: center;
+}
+
+.fantasyTitle {
+    font-family: Antilles, 'cursive';
+    font-size: 1rem;
+    background-color: #c9966f;
+    color: #312720;
+    border-radius: 5px;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+    box-shadow: 2px 2px 2px #352b24;
+    margin: 0 3.3rem 0.3rem 3.3rem;
 }
