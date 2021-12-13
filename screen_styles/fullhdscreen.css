@@ -37,7 +37,7 @@ html{
 }
 
 .background1 {
-    background: url(images/background1.png);
+    background: url(bg_images/background1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     image-rendering: pixelated;
@@ -143,7 +143,7 @@ div.subtitle {
 }
 
 .background2 {
-    background: url(images/background2.png);
+    background: url(bg_images/background2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     image-rendering: pixelated;
@@ -286,6 +286,7 @@ canvas {
 
 .boxTeam {
     background-color:#312720;
+    position: relative;
     opacity: 0.92;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -296,9 +297,11 @@ canvas {
 }
 
 .limitCardTeam {
-    max-width: 1280px;
-    max-height: 920px;
-    margin: auto;
+   padding: 4rem;
+   margin: 4rem;
+   position: absolute;
+   width: auto;
+   height: auto;
 }
 
 .card {
@@ -310,6 +313,7 @@ canvas {
     margin: auto;
     float: left;
     background-color: #5a483a;
+    position: relative;
 }
 
 .card:hover {
@@ -340,6 +344,7 @@ img {
     font-size: 1.8rem;
     border-radius: 10px;
     text-align: center;
+    text-shadow: 3px 3px black;
     margin: 0 1rem;
     box-shadow: 2px 2px 2px black;
 }
@@ -351,7 +356,9 @@ img {
     margin: 2px 5rem 0.5rem 5rem;
     background-color: #c9966f;
     border-radius: 0 0 10px 10px;
+    color: black;
     box-shadow: 2px 2px 2px black;
+    text-shadow: 1px -1px #312720, -1px 1px #e2b593;
 }
 
 .experienceTeam {
