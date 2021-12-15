@@ -2,173 +2,9 @@ body {
     background-color: #5a5851;
     margin: 0px;
 }
-
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #bea693; 
-  }
-   
-  ::-webkit-scrollbar-thumb {
-    background: rgb(56, 52, 47); 
-    border-radius: 5px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(94, 84, 72); 
-  }
-
 html{
     scroll-behavior: smooth;
 }
-
-.navbar { 
-    background-color: #111;
-    width: 100%;
-    position: fixed;
-    z-index: 9999;
-    box-shadow: 0 0 1em black, 0 0 2em black, 0 0 1.5em black;
-} 
-
-.navbutton {
-    font-family: 'Dosis', sans-serif;
-}
-
-.background1 {
-    background: url(bg_images/background1.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    image-rendering: pixelated;
-    font-family: 'Dosis', sans-serif;
-    color: white;
-    background-color: none;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-.home {
-    margin: 0;
-    padding: 3px 10px 3px 0;
-    float: left;
-}
-
-ul {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: #111;
-    max-width: 1280px;
-}
-
-li {
-    float: left;
-    margin-top: 3px;
-}
-
-li a {
-    display: block;
-    color: #b17d55;
-    text-align: center;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: all 0.2s;
-    border-radius: 6px;
-}
-
-li a:hover {
-    background-color: #272523;
-    color: white;
-    text-shadow: 1px 1px 1px #111, 2px 2px 2px #111;
-}
-
-li a:active {
-    color: #33302a;
-    cursor: pointer;
-}
-
-button.whitepaper:hover { 
-    background-color: #a56d43;
-}
-
-button.whitepaper:active {
-    color: #33302a;
-    cursor: pointer;
-    box-shadow: none;
-    background-color: #7e5433;
-    margin-top: 10px;
-}
-
-button.whitepaper {
-    float: right;
-    border: none;
-    text-align: right;
-    color: #f0e8dd;
-    font-size: 1rem;
-    font-family: 'Dosis', 'sans-serif';
-    background-color: #b17d55;
-    box-shadow: 0 3px 0 #744f32;
-    height: 38px;
-    line-height: 20px;
-    padding: 0 20px;
-    font-weight: 900;
-    cursor: pointer;
-    margin-top: 7px;
-    margin-right: 5px;
-    border-radius: 30px;
-    transition: all 0.2s;
-}
-
-div.subtitle { 
-    background: none;
-    margin: 0; 
-    text-align: center;
-    width: 100%;
-    list-style: none;
-}
-
-.subtitle {
-    text-align: center;
-    word-spacing: 4vh;
-    font-size: 5vh;
-    z-index: 100;
-    position: relative;
-    text-shadow: 1px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000, 4px 4px 4px #000, 5px 5px 5px #000;
-}
-
-.background2 {
-    background: url(bg_images/background2.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    image-rendering: pixelated;
-    background-color: none;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
-
-.box1 {
-    background-color:#312720;
-    opacity: 0.92;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    padding: 2rem 2rem 1rem 2rem;
-    border-radius: 50px;
-    height: 95%;
-    box-shadow: 6px 6px 2px #1f1915;
-}
-
-@font-face {
-    font-family: Antilles;
-    src: url(antilles.ttf);
-  }
-
 #homelogo {
     position: absolute;
     top: -60px;
@@ -197,6 +33,168 @@ div.subtitle {
     position: absolute;
     top: -60px;
 }
+@font-face {
+    font-family: Antilles;
+    src: url(antilles.ttf);
+}
+
+    /* SCROLLBAR --------------------------------------------------------------------------------------------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #bea693; 
+}
+::-webkit-scrollbar-thumb {
+    background: #38342f; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(94, 84, 72); 
+}
+
+    /* NAVBAR -----------------------------------------------------------------------------------------------*/
+
+.navbar { 
+    background-color: #111;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 0 0 1em black, 0 0 2em black, 0 0 1.5em black;
+} 
+.navbutton {
+    font-family: 'Dosis', sans-serif;
+}
+.homebutton {
+    margin: 0;
+    padding: 3px 10px 3px 0;
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    max-width: 1280px;
+}
+li {
+    float: left;
+    margin-top: 3px;
+}
+li a {
+    display: block;
+    color: #b17d55;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    border-radius: 6px;
+}
+li a:hover {
+    background-color: #272523;
+    color: white;
+    text-shadow: 1px 1px 1px #111, 2px 2px 2px #111;
+}
+li a:active {
+    color: #33302a;
+    cursor: pointer;
+}
+button.whitepaper:hover { 
+    background-color: #a56d43;
+}
+button.whitepaper:active {
+    color: #33302a;
+    cursor: pointer;
+    box-shadow: none;
+    background-color: #7e5433;
+    margin-top: 10px;
+}
+button.whitepaper {
+    float: right;
+    border: none;
+    text-align: right;
+    color: #f0e8dd;
+    font-size: 1rem;
+    font-family: 'Dosis', 'sans-serif';
+    background-color: #b17d55;
+    box-shadow: 0 3px 0 #744f32;
+    height: 38px;
+    line-height: 20px;
+    padding: 0 20px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-right: 5px;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+    /* INTRO ------------------------------------------------------------------------------------------------*/
+
+.background1 {
+    background: url(bg_images/background1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    background-color: none;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.subtitle {
+    background: none;
+    margin: 0;
+    padding: 0 18rem; 
+    text-align: center;  
+    word-spacing: 1.5vw;
+    font-size: 3vw;
+    z-index: 100;
+    position: relative;
+    text-shadow: 1px 1px 1px #000, 2px 2px 1px #000, 3px 3px 2px #000, 4px 4px 2px #000, 5px 5px 2px #000;
+}
+
+canvas {
+    filter: blur(1px);
+    width: 100%;
+    height: 80%;
+    padding-top: 3rem;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+    /* OTHER BOXES ------------------------------------------------------------------------------------------*/
+
+.background2 {
+    background: url(bg_images/background2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+    background-color: none;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+    /* BOX GAME ---------------------------------------------------------------------------------------------*/
+.box1 {
+    background-color:#312720;
+    opacity: 0.92;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 50px;
+    height: 95%;
+    box-shadow: 6px 6px 2px #1f1915;
+}
 
 .topic1 {
     background-color: #312720;
@@ -215,7 +213,6 @@ div.subtitle {
 .text {
     color: #e9dbce;
     font-size: 2rem;
-    padding-bottom: 2rem;
     font-family: 'Dosis', 'sans-serif';
     text-shadow: 1px 1px 1px #000;
 }
@@ -230,8 +227,10 @@ div.subtitle {
 
 * {
     box-sizing: border-box;
-  }
-  
+}
+
+    /* BOX MARKETPLACE --------------------------------------------------------------------------------------*/
+
 .column {
     background-color: #1d1a16;
     float: left;
@@ -246,10 +245,10 @@ div.subtitle {
     text-shadow: 3px 3px 3px #352b24;
 }
   
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.row {
+    padding-top: 2rem;
+    display: flex;
+    height: auto;
   }
 
 .centered {
@@ -269,20 +268,11 @@ div.subtitle {
 
 .imglogo {
     z-index: 100;
+    margin: 10rem 4rem 4rem 4rem;
     position: relative;
 }
 
-canvas {
-    filter: blur(1px);
-    width: 100%;
-    height: 80%;
-    padding-top: 3rem;
-    left: 0;
-    top: 0;
-    position: absolute;
-  }
-
-  /* TEAM */
+    /* BOX TEAM ---------------------------------------------------------------------------------------------*/
 
 .boxTeam {
     background-color:#312720;
@@ -293,15 +283,16 @@ canvas {
     padding: 2rem 2rem 1rem 2rem;
     border-radius: 50px;
     height: 95%;
+    width: auto;
     box-shadow: 6px 6px 2px #1f1915;
 }
 
 .limitCardTeam {
-   padding: 4rem;
    margin: 4rem;
-   position: absolute;
-   width: auto;
-   height: auto;
+   
+   width: 90%;
+   height: 70%;
+   display: flex;
 }
 
 .card {
@@ -353,7 +344,7 @@ img {
     font-family: Antilles, 'cursive';
     font-size: 1.5rem;
     text-align: center;
-    margin: 2px 5rem 0.5rem 5rem;
+    margin: 3px 4rem 0.5rem 4rem;
     background-color: #c9966f;
     border-radius: 0 0 10px 10px;
     color: black;
@@ -367,6 +358,7 @@ img {
     margin: 2px;
     padding-bottom: 0.3rem;
     text-align: center;
+    font-size: 1vw;
 }
 
 .fantasyTitle {
@@ -378,5 +370,28 @@ img {
     padding: 0 1rem 0 1rem;
     text-align: center;
     box-shadow: 2px 2px 2px #352b24;
-    margin: 0 3.3rem 0.3rem 3.3rem;
+    margin: 0.3rem;
+}
+
+    /* BOX PARTNERS -----------------------------------------------------------------------------------------*/
+
+    /* FOOTER -----------------------------------------------------------------------------------------------*/
+
+.footer-container {
+    box-shadow: 0 -2px black;
+    background-color: #252320;
+    image-rendering: pixelated;
+    display: flex;
+    color:#776f68;
+    font-size: 1vw;
+    font-family: 'Dosis', 'sans-serif';
+}
+.footer-left {
+    display: block;
+    position: relative;
+    flex-grow: 1;
+}
+.footer-right {
+    display: flex;
+    -ms-flex-direction: row;
 }
