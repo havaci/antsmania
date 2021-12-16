@@ -154,14 +154,16 @@ button.whitepaper {
 }
 .card-sm-item {
     font-size: 2rem;
-    color: #3d2f25; 
     padding: 0 10px 0 10px;
 }
-.card-sm-item:hover {
+.card-sm-link{
+    color: #3d2f25; 
+}
+.card-sm-link:hover {
     color: #e9dbce;
 }
 .twitter {
-    padding-left: 18px;
+    padding-left: 1.125rem;
 }
 
     /* INTRO ------------------------------------------------------------------------------------------------*/
@@ -430,6 +432,7 @@ img {
 .footer-nav-link {
     font-size: 3rem;
     padding: 0 1rem 0 2rem;
+    color:#776f68;
 }
 .footer-column {
     margin-top: 3.5rem;
@@ -444,7 +447,7 @@ img {
     text-align: center;
     font-size: 20px;
 }
-.footer-nav-item:hover {
+.footer-nav-link:hover {
     color: #e9dbce;
 }
 .footer-image {
