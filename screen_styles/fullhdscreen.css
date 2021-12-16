@@ -139,7 +139,6 @@ button.whitepaper {
     display: flex;
     flex-flow: row wrap;
     height: 110px;
-    border-radius: 10px;
     width: 100%;
 }
 .card-sm {
@@ -147,7 +146,8 @@ button.whitepaper {
     list-style-type: none;
     display: flex;
     padding: 50px 5px 0 5px;
-    max-width: 1280px;  
+    max-width: 1280px; 
+    border-radius: 20px; 
     border: solid 4px #3d2f25;
     box-shadow: 0 0 1em black, 0 0 2em black, 0 0 1.5em black;
     margin: auto;
