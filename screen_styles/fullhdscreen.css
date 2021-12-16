@@ -131,6 +131,39 @@ button.whitepaper {
     transition: all 0.2s;
 }
 
+    /* CARD NAVBAR ------------------------------------------------------------------------------------------*/
+
+.card-navbar {
+    position: fixed;
+    z-index: 9998;
+    display: flex;
+    flex-flow: row wrap;
+    height: 110px;
+    border-radius: 10px;
+    width: 100%;
+}
+.card-sm {
+    background-color: #7e5433;
+    list-style-type: none;
+    display: flex;
+    padding: 50px 5px 0 5px;
+    max-width: 1280px;  
+    border: solid 4px #3d2f25;
+    box-shadow: 0 0 1em black, 0 0 2em black, 0 0 1.5em black;
+    margin: auto;
+}
+.card-sm-item {
+    font-size: 2rem;
+    color: #3d2f25; 
+    padding: 0 10px 0 10px;
+}
+.card-sm-item:hover {
+    color: #e9dbce;
+}
+.twitter {
+    padding-left: 18px;
+}
+
     /* INTRO ------------------------------------------------------------------------------------------------*/
 
 .background1 {
@@ -284,7 +317,6 @@ canvas {
     width: auto;
     box-shadow: 6px 6px 2px #1f1915;
 }
-
 .limitCardTeam {
    margin: 4rem;
    
@@ -292,7 +324,6 @@ canvas {
    height: 70%;
    display: flex;
 }
-
 .card {
     box-shadow: 6px 6px 10px 0 black;
     transition: 0.5s;
@@ -304,16 +335,13 @@ canvas {
     background-color: #5a483a;
     position: relative;
 }
-
 .card:hover {
     box-shadow: 12px 12px 20px 0 black;
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
-
 img {
     border-radius: 5px 5px 0 0;
-  }
-  
+}
 .hrTeam {
     height: 2px; 
     color: black;
@@ -322,7 +350,6 @@ img {
     border: none;
     margin: 0rem 0 0.3rem 0;
 }
-
 .teamImg {
     opacity: 1;
 }
@@ -337,7 +364,6 @@ img {
     margin: 0 1rem;
     box-shadow: 2px 2px 2px black;
 }
-
 .occupation {
     font-family: Antilles, 'cursive';
     font-size: 1.5rem;
@@ -349,7 +375,6 @@ img {
     box-shadow: 2px 2px 2px black;
     text-shadow: 1px -1px #312720, -1px 1px #e2b593;
 }
-
 .experienceTeam {
     font-family: 'Dosis', 'sans-serif';
     color: #e9dbce;
@@ -358,7 +383,6 @@ img {
     text-align: center;
     font-size: 1vw;
 }
-
 .fantasyTitle {
     font-family: Antilles, 'cursive';
     font-size: 1rem;
@@ -394,18 +418,18 @@ img {
     flex-grow: 1;
     max-width: 600px;
 }
-.footer-right {
-
-}
 .footer-row {
     display: flex;
     flex-flow: row wrap;
 }
 .footer-nav-row {
     list-style-type: none;
+    display: flex;
+    margin-top: 5.8rem;
 }
 .footer-nav-link {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    padding: 0 1rem 0 2rem;
 }
 .footer-column {
     margin-top: 3.5rem;
